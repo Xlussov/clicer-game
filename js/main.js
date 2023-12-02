@@ -145,7 +145,7 @@ function alertToGame(){
    alertBlock.style.display = 'block'
    alert.textContent = `Ваша оцінка: ${score}, Ваш час: ${document.querySelector('#duration').value} секунди, ${ score > scoreHistory[0] ? `У тебе новий рекорд: ${score}` : `До рекорду не вистачило ${scoreHistory[0] - score + 1}`}`
    document.querySelector('.alert-block').addEventListener('click', ()=>{
-      document.querySelector('.alert-block').style.display = 'none`'
+      document.querySelector('.alert-block').style.display = 'none'
    })
 }
 
