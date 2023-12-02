@@ -1,0 +1,143 @@
+body {
+   height: 100vw;
+   overflow-y: scroll;
+   background: linear-gradient(185deg, red, yellow);
+}
+
+.container {
+   margin:  40px auto;
+   max-width: 960px;
+   background-color: #fff;
+   padding: 50px;
+   border-radius: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+[for='duration']{
+   font-size: 30px;
+   font-weight: 800;
+   font-family: cursive;
+}
+
+
+#duration{
+   font-size: 35px;
+   width: 90px;
+   border: 3px solid;
+   border-radius: 15px;
+   font-weight: 700;
+}
+
+#select{
+   font-size: 20px;
+   width: 150px;
+   border: 3px solid;
+   border-radius: 15px;
+   font-weight: 700;
+}
+
+#game-container {
+   position: relative;
+   width: 500px;
+   height: 500px;
+   border: 1px solid black;
+   margin: 30px;
+   background-color: rgb(207, 248, 255);
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#startGameBtn {
+   font-weight: 800;
+   font-family: cursive;
+   color: #f1f1f1;
+   font-size: 45px;
+   background-color: green;
+   border: 0;
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+.square {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   border: 2px solid black;
+   border-radius: clamp(1px, 20%, 10px);
+   cursor: pointer;
+}
+
+
+#score, #timer {
+   font-size: 30px;
+   font-weight: 800;
+   font-family: cursive;
+}
+
+.burger-btn img{
+   position: relative;
+   left: -450px;
+   width: 50px;
+   height: 50px;
+}
+
+.burger-content {
+   display: none;
+   position: absolute;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   left: 0px;
+   top: 0px;
+   z-index: 10;
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.burger-content ul{
+   position: relative;
+   left: 45%;
+   top: 45%;
+   color: #f1f1f1;
+   font-family: cursive;
+   list-style-type: none;
+   font-size: 30px;
+}
+
+.burger-content ul li:hover {
+   font-size: 35px;
+   color: yellow;
+   font-weight: 700;
+}
+
+.screen2 {
+   display: none;
+}
+
+.screen2 h2 {
+   font-family: cursive;
+   list-style-type: none;
+   font-size: 30px;
+}
+
+.screen2 li {
+   font-family: cursive;
+   font-size: 30px;
+}
+
+.alert-block{
+   display: none;
+   position: absolute;
+   top: 20px;
+   background-color: #f1f1f1;
+   padding: 10px;
+   width: 500px;
+   height: 100px;
+   border-radius: 15px;
+   font-family: cursive;
+
+}

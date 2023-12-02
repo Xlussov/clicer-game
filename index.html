@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alert-block"><h2 class="alert"></h2><p>Нажміть на повідомлення</p></div>
+        <div class="menu">
+            <div class="burger-btn">
+                <img src="./img/OIP.jpg" alt="burger">
+            </div>
+            <div class="burger-content">
+                <ul>
+                    <li id="home">HOME</li>
+                    <li id="record">Analitic</li>
+                </ul>
+            </div>
+        </div>
+        <div class="screen1">
+            <div>
+                <label for="duration">Game Duration(second.)</label>
+                <input type="number" id="duration" value="10">
+            </div>
+    
+            <div id="game-container">
+                <button id="startGameBtn">Strat Game</button>
+            </div>
+            <div>
+                <span id="score">Score: 0</span>
+                <span id="timer">Time: 10</span>
+            </div>
+            <select name="select" id="select">
+                <option value="light">light mod</option>
+                <option value="midle">Midle mod</option>
+                <option value="hard">Hard mod</option>
+                <option value="die">die</option>
+            </select>
+        </div>
+        <div class="screen2">
+            <div class="last-score">
+                <h2>Last score</h2>
+                <ul class="last-scores"></ul>
+            </div>
+            <div class="history">
+                <h2>History of games</h2>
+                <ul class="historys"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
